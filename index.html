@@ -1,1 +1,248 @@
-echo "Hello, World!"
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src"js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="Top-header Main-colour">
+      <img class="Picture Small-pic" src="img/Foto_perfil.jpg">
+      <ul class="Top-nav">
+        <li class="Mobile-Tabs" onclick="ShowContainer('.About', this, 'Mobile-Tabs');" style="color: white"><div class="Picture Mini-pic"><i class="fas fa-info-circle"></i></div></li>
+        <li class="Mobile-Tabs" onclick="ShowContainer('.Interests', this, 'Mobile-Tabs');"><div class="Picture Mini-pic"><i class="far fa-address-book"></i></div></li>
+        <li class="Mobile-Tabs" onclick="ShowContainer('.Skills', this, 'Mobile-Tabs');"><div class="Picture Mini-pic"><i class="fas fa-tools"></i></i></div></li>
+        <li class="Mobile-Tabs" onclick="ShowContainer('.Projects', this, 'Mobile-Tabs');"><div class="Picture Mini-pic"><i class="fas fa-project-diagram"></i></i></div></li>
+        <li class="Mobile-Tabs" onclick="ShowContainer('.Experience', this, 'Mobile-Tabs');"><div class="Picture Mini-pic"><i class="fas fa-fax"></i></div></li>
+      </ul>
+    </div>
+    <div class="Super-container About">
+      <h1>Pablo Alejandro Barrera Robledo</h1>
+      <h2>alex.barrob@gmail.com</h2>
+      <p>Soy egresado de la carrera Ingeniería en Informática, de la Universidad de Guadalajara.
+        Actualmente radico en la ciudad de Guadalajara y tengo 22 años de edad.</p>
+      <p>Me considero una persona obstinada. Me gusta trabajar en equipo y aprender cosas nuevas me motiva y me mantiene interesado en lo que estoy haciendo.</p>
+    </div>
+    <div class="Super-container Interests" style="display:none">
+      <h1>INTERESES</h1>
+      <p>Me gusta practicar distintos deportes, jugar videojuegos y vivir nuevas experiencias.</p>
+      <p>Practico CrossFit y disfruto de jugar a otros deportes con amigos</p>
+    </div>
+    <div class="Super-container Skills" style="display:none">
+      <h1>HABILIDADES</h1>
+      <div class="Scroll-container">
+        <div class="Skill-type">
+          <h3><i class="fas fa-laptop-code"></i> Programación de aplicaciones de escritorio <i class="fas fa-laptop-code"></i></h3>
+          <div class="Skill-card">
+            <h2>C#</h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>C++</h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>Java <i class="fab fa-java"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>Python <i class="fab fa-python"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+        </div>
+        <div class="Skill-type">
+          <h3><i class="fas fa-globe"></i> Desarrollo Web <i class="fas fa-globe"></i></h3>
+          <div class="Skill-card">
+            <h2>HTML <i class="fab fa-html5"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>CSS <i class="fab fa-css3-alt"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>JavaScript <i class="fab fa-js-square"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>Django <i class="fab fa-python"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i></p>
+          </div>
+        </div>
+        <div class="Skill-type">
+          <h3><i class="fas fa-database"></i> Bases de datos <i class="fas fa-database"></i></h3>
+          <div class="Skill-card">
+            <h2>SQL <i class="fas fa-table"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>MongoDB <i class="fas fa-server"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-adjust"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+        </div>
+        <div class="Skill-type">
+          <h3><i class="fas fa-toolbox"></i> Otros <i class="fas fa-toolbox"></i></h3>
+          <div class="Skill-card">
+            <h2>Git <i class="fab fa-github"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>Excel <i class="fas fa-file-excel"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+          <div class="Skill-card">
+            <h2>Inglés <i class="fas fa-language"></i></h2>
+            <p class="Skill-bar"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Super-container Projects" style="display:none">
+      <h1>PROYECTOS</h1>
+      <div class="Scroll-container">
+        <div class="Project-type">
+          <h3><i class="fas fa-user"></i> Proyectos individuales <i class="fas fa-user"></i></h3>
+          <div class="Project-card">
+            <div class="Top-card" style="background-image: url('img/XMLGo.png')">
+              <div class="Pic-card">
+                <h4>XMLGo</h4>
+              </div>
+            </div>
+            <div class="Bottom-card">
+              <h3><i class="fab fa-windows"></i> Windows 7, 8, 10</h3>
+              <h4><i class="fas fa-laptop-code"></i> C#</h4>
+              <p>XMLGo es un programa administrador de archivos XML. En éste, puedes visualizar los archivos que cargues
+                al sistema (ya sea de forma individual, por carpeta o por carpeta comprimida en zip) por medio de una tabla
+                cuyas columnas puedes ocultar, ajustar y reorganizar. También es posible convertir la tabla resultante a un archivo
+                de texto, csv o excel.</p>
+              <h4 class="End-card">Versión: 0.8.0</h4>
+            </div>
+          </div>
+          <div class="Project-card">
+            <div class="Top-card" style="background-image: url('img/Parking-lots.png')">
+              <div class="Pic-card">
+                <h4>ParkingLots</h4>
+              </div>
+            </div>
+            <div class="Bottom-card">
+              <h3><i class="fab fa-windows"></i> Windows 10, <i class="fab fa-android"></i> Android VR</h3>
+              <h4><i class="fas fa-laptop-code"></i> Unity, C#</h4>
+              <p>ParkingLots es el prototipo de un videojuego de realidad virtual. Fue realizado con el objetivo de
+                simular la enseñanza de conducción a través de vehículos y aparcamiento en un determinado lugar.
+                Entre más rápido conduzcas ganarás más puntos, ¡pero cuidado! si chocas, perderás una gran cantidad de puntos.
+                El juego termina cuando te estacionas en el lugar indicado.<br>El juego cuenta con compatibilidad con un control bluetooth.</p>
+              <h4 class="End-card">Versión: Prototipo</h4>
+            </div>
+          </div>
+        </div>
+        <div class="Project-type">
+          <h3><i class="fas fa-users"></i> Proyectos en equipo <i class="fas fa-users"></i></h3>
+          <div class="Project-card">
+            <div class="Top-card" style="background-image: url('img/TeachMe.png')">
+              <div class="Pic-card">
+                <h4>TeachMe</h4>
+              </div>
+            </div>
+            <div class="Bottom-card">
+              <h3><i class="fas fa-globe"></i> Sitio Web</h3>
+              <h4><i class="fas fa-globe"></i> HTML, CSS, JS, Django, Python</h4>
+              <p>Se trata de una plataforma de E-Learning creada para estudiantes y académicos de la Universidad de Guadalajara.
+                Los usuarios pueden crear y compartir publicaciones de contenido académico tales como artículos,
+                ejemplos, ejercicios, vídeos y documentos; mientras que otros usuarios pueden ver, comentar, calificar (entre otras funciones)
+                dichas publicaciones.
+                El sistema cuenta con un módulo de inteligencia artificial que recomienda publicaciones con base en tu historial de vistas,
+                similitudes con la publicación que estás visualizando y corrección o sugerencia de campos de texto.</p>
+              <h4 class="End-card">Versión: 0.9.5</h4>
+            </div>
+          </div>
+          <div class="Project-card">
+            <div class="Top-card" style="background-image: url('img/Tangerine.jpg')">
+              <div class="Pic-card">
+                <h4>Tangerine</h4>
+              </div>
+            </div>
+            <div class="Bottom-card">
+              <h3><i class="fab fa-windows"></i> Windows 10</h3>
+              <h4><i class="fas fa-laptop-code"></i> C#</h4>
+              <p>Es un sistema auxiliar para la minería de Datos. El programa puede realizar distintos procesos de limpieza y análisis de datos
+                contenidos en un archivo csv. Por ejemplo, contabiliza las columnas e intancias de un archivo, así como la cantidad de instancias
+                faltantes; determina el tipo de dato de cada atributo entre los campos númerico, categórico, ordinal, clase, etc. Permite agregar
+                nuevas columnas e instancias al dataset.<br>
+                Es posible realizar análisis estadístico, tanto análisis univariable como multivariable y mostrar gráficas y estadísticas resultantes.<br>
+                Además, ofrece diversas opciones de limpieza de datos, como el llenado de instancias faltantes por atributo, detección y corrección de outliers
+                normalización, muestreo, entre otros.</p>
+              <h4 class="End-card">Versión: 0.7.5</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Super-container Experience" style="display:none">
+      <h1>EXPERIENCIA LABORAL</h1>
+      <div class="Scroll-container">
+        <div class="Exp-card">
+          <h1>2018-Actualidad</h1>
+          <h2>Auxiliar contable</h2>
+          <h3>Detalles: </h3>
+          <p>Auxiliar del L.C.P Sergio Tizcareño.</p>
+          <h3>Actividades desempeñadas: </h3>
+          <ul>
+            <li>Descarga de opiniones de cumplimiento y facturas en XML.</li>
+            <li>Conversión y reportes de archivos XML a excel.</li>
+            <li>Trámites y envíos de DIOT, así como declaraciones en cero a través del portal del SAT.</li>
+          </ul>
+        </div>
+        <div class="Exp-card">
+          <h1>2019-2020 (12 agosto - 14 febrero)</h1>
+          <h2>Prestador de servicio social</h2>
+          <h3>Detalles: </h3>
+          <p>Auxiliar en área de apoyo tecnológico en el Centro Universitario de Ciencias Exactas e Ingeniería.</p>
+          <h3>Actividades desempeñadas: </h3>
+          <ul>
+            <li>Atención a alumnos y personal académico universitario.</li>
+            <li>Mantenimiento de equipos de cómputo.</li>
+            <li>Desarrollo de software para control de aulas.</li>
+            <li>Instalación de computadoras, proyectores, etc.</li>
+            <li>Apoyo en activides recreativas y culturales.</li>
+            <li>Mantenimiento y conservación del área de trabajo.</li>
+          </ul>
+        </div>
+        <div class="Exp-card">
+          <h1>2016 (1 Julio - 15 Agosto)</h1>
+          <h2>Auxiliar</h2>
+          <h3>Detalles: </h3>
+          <p>Auxiliar de librería en Gonvill sucursal Morelos.</p>
+          <h3>Actividades desempeñadas: </h3>
+          <ul>
+            <li>Atención a cliente.</li>
+            <li>Control de inventario.</li>
+            <li>Organización de estanterías.</li>
+            <li>Limpieza de área de trabajo. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <aside class="Left-panel Main-colour">
+    <div class="Personal_info">
+      <img class="Picture" src="img/Foto_perfil.jpg">
+      <h2 class="Name">Pablo Alejandro Barrera Robledo</h2>
+      <div class="Navigation">
+      <ul class="Titles">
+          <li class="Tabs" onclick="ShowContainer('.About', this, 'Tabs');" style="color: white"><i class="fas fa-info-circle"></i> ACERCA DE MÍ</li>
+          <li class="Tabs" onclick="ShowContainer('.Interests', this, 'Tabs');"><i class="far fa-address-book"></i> INTERESES</li>
+          <li class="Tabs" onclick="ShowContainer('.Skills', this, 'Tabs');"><i class="fas fa-tools"></i> HABILIDADES</li>
+          <li class="Tabs" onclick="ShowContainer('.Projects', this, 'Tabs');"><i class="fas fa-project-diagram"></i> PROYECTOS</li>
+          <li class="Tabs" onclick="ShowContainer('.Experience', this, 'Tabs');"><i class="fas fa-fax"></i> EXPERIENCIA LABORAL</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</html>

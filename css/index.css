@@ -1,0 +1,405 @@
+/* Colores */
+.Main-colour {
+  background-color: rgba(14, 120, 186, 1);
+  color: white;
+}
+
+/* Contenedores */
+.Top-header {
+  display: none;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.Left-panel {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  padding: 5px;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  min-width: 12rem;
+  z-index: 100;
+  border-right: 10px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.Personal_info {
+  position: absolute;
+  margin: 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.Navigation {
+  position: relative;
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  top: 10%;
+}
+
+.Super-container {
+  height: 95vh;
+  border: 3px solid;
+  border-color: rgba(14, 120, 186, 1);
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.Scroll-container {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.Scroll-container::-webkit-scrollbar, p::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.Scroll-container::-webkit-scrollbar:vertical, p::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.Scroll-container::-webkit-scrollbar-thumb, p::-webkit-scrollbar-thumb {
+    background-color: rgba(14, 120, 186, 1);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.Skill-type, .Project-type {
+  width: 100%;
+  display: contents;
+  text-align: center;
+}
+
+.Skill-card {
+  width: 20%;
+  border: 3px solid;
+  border-color: rgba(14, 120, 186, 0.5);
+  margin-right: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  border-radius: 15%;
+}
+
+.Project-card {
+  width: 30%;
+  height: auto;
+  border: 3px solid;
+  border-color: rgba(14, 120, 186, 0.5);
+  margin-right: 1%;
+  margin-bottom: 1%;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
+}
+
+.Top-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  border-radius: inherit;
+}
+
+.Bottom-card {
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  text-align: justify;
+}
+
+.Exp-card {
+  width: 100%;
+  border: 3px solid;
+  border-radius: 30px;
+  border-color: rgba(14, 120, 186, 0.5);
+  margin-right: 1%;
+  margin-bottom: 1%;
+  text-align: justify;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: bolder;
+  color: black;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Textos */
+.Name {
+  text-align: center;
+  margin-block-end: 5%;
+  margin-block-start: 5%;
+}
+
+.Skill-card h2{
+  color: rgba(14, 120, 186, 1);
+}
+
+.Pic-card h4 {
+  width: 100%;
+  background-color: steelblue;
+  font-size: 24px;
+}
+
+.Bottom-card h3, .Bottom-card h4{
+  width: 100%;
+  padding: 2px;
+  padding-left: 5%;
+  background-color: lightgray;
+  font-size: 16px;
+  margin: 0;
+}
+
+.Bottom-card h4 {
+  color: royalblue;
+  font-size: 14px;
+  border-top: 1px solid;
+}
+
+.Bottom-card p {
+  font-size: 14px;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  height: 12rem !important;
+  overflow-y: auto;
+}
+
+.Exp-card h1, .Exp-card h2 {
+  font-size: 22px;
+  width: 45%;
+  margin: 2%;
+  margin-bottom: 0;
+}
+
+.Exp-card h3 {
+  font-size: 18px;
+  width: auto;
+  margin-left: 2%;
+  color: rgba(14, 120, 186, 0.5);
+  margin-bottom: 0;
+}
+
+.Exp-card p, .Exp-card ul {
+  width: 100%;
+  font-size: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: justify;
+}
+
+/* Imágenes y fotos */
+.Picture {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  align-self: center;
+}
+
+.Mini-pic {
+  height: 2rem;
+  width: 2rem;
+  border-width: 0;
+}
+
+.Small-pic {
+  height: 3rem;
+  width: 3rem;
+  border-width: 3px;
+}
+
+.Skill-bar {
+  letter-spacing: 1vw;
+}
+
+.Pic-card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Estilos generales */
+body {
+  position: absolute;
+  width: 65vw;
+  margin-left: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {
+  color: rgba(14, 120, 186, 1);
+  font-family: 'JetBrains Mono', monospace;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-family: 'Lato';
+  width: 100%;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+.fab {
+  font-weight: 100;
+}
+
+.Titles {
+  align-items: center;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  letter-spacing: 1px;
+}
+
+.Titles li {
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 15%;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Titles li:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s;
+  border-bottom: 5px solid white;
+  cursor: pointer;
+}
+
+.End-card {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  bottom: 0;
+}
+
+/* Responsividad */
+
+.Top-nav {
+  list-style-type: none;
+  padding-inline-start: 5%;
+  display: flex;
+  width: 60%;
+}
+
+.Top-nav li{
+  margin-right: 10%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Top-nav li:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+/* Tipo de menú y display general */
+@media only screen and (min-width: 320px) and (max-width: 920px) {
+  .Left-panel {
+    display: none;
+  }
+
+  .Top-header {
+    display: flex;
+    padding: 1%;
+    max-height: 10% !important;
+  }
+
+  body {
+    display: contents;
+  }
+
+  .fas, .fa, .far {
+    font-size: xx-large;
+  }
+
+  .Super-container {
+    height: auto;
+  }
+
+  .Super-container i{
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: initial;
+  }
+
+  h3 {
+    font-size: smaller;
+  }
+
+  .Skill-card {
+    width: 45%;
+    margin: 1.5%;
+  }
+
+  .Project-card{
+    width: auto;
+  }
+
+  .Exp-card h1, .Exp-card h2, .Exp-card h3{
+    font-size: initial;
+  }
+
+  .Exp-card p, .Exp-card ul {
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 839px) {
+  p {
+    font-size: 22px;
+  }
+
+  .Skill-card {
+    width: 30%;
+  }
+
+  .Project-card {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 840px) and (max-width: 1079px){
+  p {
+    font-size: 24px;
+  }
+}
